@@ -24,7 +24,7 @@ int main (void)
     complex_t number1, number2, m, *d;
     
     //Request user to input all complex numbers
-   /* printf("Fist number, enter (a1 + ib1) a1: ");
+    printf("Fist number, enter (a1 + ib1) a1: ");
     scanf("%lf", &number1.real);
     printf("First number, enter (a1 + ib1)	b1: ");
     scanf("%lf", &number1.imaginary);
@@ -48,19 +48,7 @@ int main (void)
     }
     else { //Print both real and imaginary if both are not 0
         printf("Result of division: %lf + %lfi", d->real, d->imaginary);
-    }*/
-    
-    int a[5] = {1,2,3,4,5};
-        int n = 5;
-    int key = 12;
-    
-    printf("%d\n", search(a,n,key));
-    
-    char *s[5] = {"ABCDEF","GHIJ", "KLMNOPQ", "RSTUV", "WXYZ"};
-    char **p[5] = { &s[4], &s[3], &s[0], &s[2], &s[1] };
-    printf("%s\n", &(**p[3]));
-    printf("%s\n", *p[3]);
-    printf("%s\n", &((**p)[3]));
+    }
     
     return 0;
 } //End of main function
@@ -101,18 +89,6 @@ complex_t* division (complex_t *c1, complex_t *c2)
 }//End of division function
 //End of program
 
-int search(const int a[], int n, int key)
-{
-    int result=0;
-    int *p;
-    for (p=a; p<a+n; p++)
-    {
-        if(*p==key)
-        {
-            result = 1;
-        }
-    }
-    return result;
-}
+
 
 
